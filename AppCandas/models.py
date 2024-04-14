@@ -9,3 +9,8 @@ class Curso(models.Model):
 class Alumno(models.Model):
     nombre = models.CharField(max_length=50)
     DNI = models.IntegerField()
+
+class Profesor(models.Model):
+    nombre = models.CharField(max_length=50)
+    DNI = models.IntegerField()
+    titulo = models.CharField(max_length=50)

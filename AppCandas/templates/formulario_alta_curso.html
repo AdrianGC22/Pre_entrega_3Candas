@@ -1,0 +1,12 @@
+{% extends 'padre.html' %}
+{% load static %}
+{% block contenido %}
+    <form action="/AppCandas/alta_curso/" method="POST">
+        {% csrf_token %}
+        <p>Nombre:</p>
+        <input type="text" name="nombre" required>
+        <p>Comision:</p>
+        <input type="number" name="comision" required>
+        <button>Enviar</button>
+    </form>
+{% endblock %}
